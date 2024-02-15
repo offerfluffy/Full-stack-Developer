@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <main>
+      <form class="registration-form" action="" method="post" id="survey-form">
+        <h1 class="title" id="title">Say Hello To IT!</h1>
+        <p class="description" id="description">
+          In this form we'll ask you overhall questions
+        </p>
+        <div class="label-conatiner">
+          <label for="name" id="name-label">
+            <span class="label-text-registration-form">Your name</span>
+            <input
+              class="input-registration-form"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </label>
+        </div>
+        <div class="label-conatiner">
+          <label for="email" id="email-label">
+            <span class="label-text-registration-form">Your email:</span>
+            <input
+              class="input-registration-form"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            />
+          </label>
+        </div>
+        <div class="label-conatiner">
+          <label for="number" id="number-label">
+            <span class="label-text-registration-form">Your age:</span>
+            <input
+              class="input-registration-form"
+              type="number"
+              id="number"
+              name="age"
+              min="14"
+              max="18"
+              placeholder="Enter your age"
+              required
+            />
+          </label>
+        </div>
+        <div class="label-conatiner">
+          <label for="dropdown">
+            <span class="label-text-registration-form"
+              >Are you a student or a graduate?</span
+            >
+            <select
+              class="select-registration-form"
+              name="role"
+              id="dropdown"
+              required
+            >
+              <option
+                class="select-option-registration-form"
+                value=""
+                disabled
+                selected
+              >
+                Select an option
+              </option>
+              <option class="select-option-registration-form" value="student">
+                Student
+              </option>
+              <option class="select-option-registration-form" value="graduate">
+                Graduate
+              </option>
+              <option
+                class="select-option-registration-form"
+                value="prefer-not-to-say"
+              >
+                Prefer not ot say
+              </option>
+              <option class="select-option-registration-form" value="other">
+                Other
+              </option>
+            </select>
+          </label>
+        </div>
+        <div class="label-conatiner">
+          <label for="educational-institution">
+            <span class="label-text-registration-form"
+              >Which educational institution?</span
+            >
+            <input
+              class="input-registration-form"
+              type="text"
+              id="educational-institution"
+              name="educational-institution"
+              placeholder="Enter the name of educational institution"
+              required
+            />
+          </label>
+        </div>
+        <div class="label-conatiner">
+          <span class="label-text-registration-form">
+            Do you have experience in any programming language?
+          </span>
+          <label class="label-registration-form" for="have-experience">
+            <input
+              class="input-second-registration-form"
+              type="radio"
+              id="have-experience"
+              value="have-experience"
+              name="exexperience-in-programming"
+              checked
+            />
+            <span class="input-second-text-registration-form">Yes</span>
+          </label>
+          <label class="label-registration-form" for="no-exexperience">
+            <input
+              class="input-second-registration-form"
+              type="radio"
+              value="no-exexperience"
+              id="no-exexperience"
+              name="exexperience-in-programming"
+            />
+            <span class="input-second-text-registration-form">No</span>
+          </label>
+        </div>
+        <div class="label-conatiner">
+          <span class="label-text-registration-form"
+            >Which direction do you want to choose?</span
+          >
+          <label class="label-registration-form" for="front-end">
+            <input
+              class="input-second-registration-form"
+              type="checkbox"
+              name="prefer"
+              value="front-end"
+              id="front-end"
+            />
+            <span class="input-second-text-registration-form">Front-end Development
+          </label>
+          <label class="label-registration-form" for="back-end">
+            <input
+              class="input-second-registration-form"
+              type="checkbox"
+              name="prefer"
+              value="back-end"
+              id="back-end"
+            />
+            <span class="input-second-text-registration-form">Back-end Development</span>
+          </label>
+          <label class="label-registration-form" for="game-development">
+            <input
+              class="input-second-registration-form"
+              type="checkbox"
+              name="prefer"
+              value="game-development"
+              id="game-development"
+            />
+            <span class="input-second-text-registration-form">Game Development</span>
+          </label>
+          <label class="label-registration-form" for="cloud-engineering">
+            <input
+              class="input-second-registration-form"
+              type="checkbox"
+              name="prefer"
+              value="cloud-engineering"
+              id="cloud-engineering"
+            />
+            <span class="input-second-text-registration-form">Cloud Engineering</span>
+          </label>
+          <label class="label-registration-form" for="devops">
+            <input
+              class="input-second-registration-form"
+              type="checkbox"
+              name="prefer"
+              value="devops"
+              id="devops"
+            />
+            <span class="input-second-text-registration-form">DevOps</span>
+          </label>
+        </div>
+        <div class="label-conatiner">
+        <label class="label-registration-form" for="message">
+          <span class="label-text-registration-form">Message</span>
+          <textarea class="input-registration-form textarea-registration-form"
+            name="message"
+            id="message"
+            placeholder="Your message here..."
+          ></textarea>
+        </label>
+        </div>
+        <input class="input-submit-registration-form" type="submit" id="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>
