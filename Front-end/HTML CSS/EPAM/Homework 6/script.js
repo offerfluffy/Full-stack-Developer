@@ -4,7 +4,7 @@ const password = "1261";
 if (login == "Admin") {
   const userPassword = prompt("Enter your password:");
 
-  if (userPassword === password) {
+  if (userPassword == password) {
     alert("Welcome");
   } else {
     alert("Invalid password");
